@@ -78,7 +78,11 @@ def one(args, model, prompt, max_tokens):
     body.update(args.extra)
     t0, t_first, t_end, n_chunks, usage = post_stream(args.url, args.key, body, args.timeout)
     if t_first is None:
-        raise RuntimeError("no tokens came back")
+        if max_tokens > 1:
+            raise RuntimeError("no tokens came back")
+        # prefill test: the one token may be a template token with no visible text; the request still ends right
+        # after the prompt is read
+        t_first = t_end
     out_tokens = (usage or {}).get("completion_tokens") or n_chunks
     prompt_tokens = (usage or {}).get("prompt_tokens")
     decode_s = t_end - t_first
@@ -100,6 +104,7 @@ def main():
     p.add_argument("--extra", type=json.loads, default={}, help="JSON merged into every request body")
     p.add_argument("--timeout", type=int, default=1800)
     p.add_argument("--out", default=None, help="directory for <label>.json")
+    p.add_argument("--skip-decode", action="store_true", help="only the prefill tests")
     args = p.parse_args()
 
     model = args.model
@@ -107,7 +112,7 @@ def main():
         req = urllib.request.Request(args.url + "/models", headers={"Authorization": f"Bearer {args.key}"})
         model = json.load(urllib.request.urlopen(req, timeout=60))["data"][0]["id"]
 
-    tests = [("decode", DECODE_PROMPT, args.decode_tokens)]
+    tests = [] if args.skip_decode else [("decode", DECODE_PROMPT, args.decode_tokens)]
     tests += [(f"prefill-{n}", "Summarize what this code does.\n\n" + code_corpus(n), 1)
               for n in (int(x) for x in args.prefill.split(",") if x)]
 

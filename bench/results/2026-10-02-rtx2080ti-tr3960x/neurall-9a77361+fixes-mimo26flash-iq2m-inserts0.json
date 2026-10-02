@@ -1,0 +1,43 @@
+{
+  "label": "neurall-9a77361+fixes-mimo26flash-iq2m-inserts0",
+  "model": "mimo-v2.6-flash-iq2m",
+  "url": "http://127.0.0.1:8812/v1",
+  "extra": {
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "runs": 3,
+  "date": "2026-10-02T13:18:48+0200",
+  "tests": {
+    "decode": {
+      "median_decode_tps": 6.230183768554675,
+      "runs": [
+        {
+          "ttft_s": 5.285700488000657,
+          "total_s": 48.042273897000996,
+          "prompt_tokens": 69,
+          "completion_tokens": 256,
+          "decode_tps": 5.963995233217684,
+          "prefill_tps": 13.054088130161835
+        },
+        {
+          "ttft_s": 5.242658828999993,
+          "total_s": 46.17243064200011,
+          "prompt_tokens": 69,
+          "completion_tokens": 256,
+          "decode_tps": 6.230183768554675,
+          "prefill_tps": 13.161260774461145
+        },
+        {
+          "ttft_s": 5.159859249999499,
+          "total_s": 44.10728475199903,
+          "prompt_tokens": 69,
+          "completion_tokens": 256,
+          "decode_tps": 6.547287701645606,
+          "prefill_tps": 13.37245778555039
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "label": "neurall-9a77361+fixes-mimo26flash-iq2m-default",
+  "model": "mimo-v2.6-flash-iq2m",
+  "url": "http://127.0.0.1:8812/v1",
+  "extra": {
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "runs": 5,
+  "date": "2026-10-02T13:00:19+0200",
+  "tests": {
+    "decode": {
+      "median_decode_tps": 6.586982621871038,
+      "runs": [
+        {
+          "ttft_s": 4.749721408001278,
+          "total_s": 43.46243930000128,
+          "prompt_tokens": 69,
+          "completion_tokens": 256,
+          "decode_tps": 6.586982621871038,
+          "prefill_tps": 14.527167821625094
+        },
+        {
+          "ttft_s": 4.739805176999653,
+          "total_s": 43.433487034999416,
+          "prompt_tokens": 69,
+          "completion_tokens": 256,
+          "decode_tps": 6.590223203256109,
+          "prefill_tps": 14.557560368689613
+        },
+        {
+          "ttft_s": 4.753114025999821,
+          "total_s": 43.425901517000966,
+          "prompt_tokens": 69,
+          "completion_tokens": 256,
+          "decode_tps": 6.593783808817415,
+          "prefill_tps": 14.516798802335865
+        },
+        {
+          "ttft_s": 4.768840110000383,
+          "total_s": 45.64298678799969,
+          "prompt_tokens": 69,
+          "completion_tokens": 256,
+          "decode_tps": 6.238662350772815,
+          "prefill_tps": 14.468927120308603
+        },
+        {
+          "ttft_s": 4.798522864000915,
+          "total_s": 43.53368314200088,
+          "prompt_tokens": 69,
+          "completion_tokens": 256,
+          "decode_tps": 6.583166254376644,
+          "prefill_tps": 14.379425076338833
+        }
+      ]
+    }
+  }
+}

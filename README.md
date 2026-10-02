@@ -61,8 +61,15 @@ Qwen3.6-35B-A3B Q6_K, a user reported +16% in [#27861](https://github.com/ggml-o
 
 ## Our measurements
 
-See [bench/results](bench/results/). First machine: RTX 2080 Ti 11 GB (PCIe 3.0 x16), Threadripper 3960X,
-128 GB DDR4-3200 quad channel.
+[RTX 2080 Ti 11 GB + Threadripper 3960X, 128 GB DDR4-3200](bench/results/2026-10-02-rtx2080ti-tr3960x/):
+
+| Engine | Model | Decode tok/s | Prefill 32K tok/s |
+|---|---|---:|---:|
+| Strata 0.1.34 | Qwen3.8-Flash-Next IQ3_S | 56.0 | 783 |
+| llama.cpp v0.5.0 + #27044 | MiMo-V2.6-Flash IQ2_M | 15.5 | 208 |
+| neurall cache fork (auto) | MiMo-V2.6-Flash IQ2_M | 6.6 | 205 |
+
+Stock v0.5.0 crashes on MiMo prefill at `-ub 2048`; [#27044](https://github.com/ggml-org/llama.cpp/pull/27044) fixes it.
 
 ## License
 
