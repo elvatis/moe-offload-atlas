@@ -1,0 +1,101 @@
+{
+  "label": "llamacpp-b11344-vulkan-mimo26flash-iq2m",
+  "model": "mimo-v2.6-flash-iq2m",
+  "url": "http://127.0.0.1:8812/v1",
+  "extra": {
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "runs": 3,
+  "date": "2026-10-02T14:28:37+0200",
+  "tests": {
+    "decode": {
+      "median_decode_tps": 8.478538557966186,
+      "runs": [
+        {
+          "ttft_s": 13.732093899999882,
+          "total_s": 47.78023140000005,
+          "prompt_tokens": 69,
+          "completion_tokens": 256,
+          "decode_tps": 7.4893964464282,
+          "prefill_tps": 5.02472532612092
+        },
+        {
+          "ttft_s": 6.649820099999943,
+          "total_s": 36.725758099999894,
+          "prompt_tokens": 69,
+          "completion_tokens": 256,
+          "decode_tps": 8.478538557966186,
+          "prefill_tps": 10.37622055369597
+        },
+        {
+          "ttft_s": 6.120595400000184,
+          "total_s": 36.018644100000074,
+          "prompt_tokens": 69,
+          "completion_tokens": 256,
+          "decode_tps": 8.528984702603717,
+          "prefill_tps": 11.27341304082899
+        }
+      ]
+    },
+    "prefill-4096": {
+      "median_prefill_tps": 175.17896351803512,
+      "runs": [
+        {
+          "ttft_s": 26.34342240000001,
+          "total_s": 26.343576799999937,
+          "prompt_tokens": 3560,
+          "completion_tokens": 1,
+          "decode_tps": null,
+          "prefill_tps": 135.1380980779475
+        },
+        {
+          "ttft_s": 20.32207480000011,
+          "total_s": 20.322293400000035,
+          "prompt_tokens": 3560,
+          "completion_tokens": 1,
+          "decode_tps": null,
+          "prefill_tps": 175.17896351803512
+        },
+        {
+          "ttft_s": 19.58497999999986,
+          "total_s": 19.585198999999875,
+          "prompt_tokens": 3560,
+          "completion_tokens": 1,
+          "decode_tps": null,
+          "prefill_tps": 181.7719497288241
+        }
+      ]
+    },
+    "prefill-32768": {
+      "median_prefill_tps": 195.6270104707797,
+      "runs": [
+        {
+          "ttft_s": 144.7390992999999,
+          "total_s": 144.73987009999996,
+          "prompt_tokens": 28186,
+          "completion_tokens": 1,
+          "decode_tps": null,
+          "prefill_tps": 194.73659941450262
+        },
+        {
+          "ttft_s": 144.08030840000015,
+          "total_s": 144.08107130000008,
+          "prompt_tokens": 28186,
+          "completion_tokens": 1,
+          "decode_tps": null,
+          "prefill_tps": 195.6270104707797
+        },
+        {
+          "ttft_s": 143.44537830000013,
+          "total_s": 143.4460904,
+          "prompt_tokens": 28186,
+          "completion_tokens": 1,
+          "decode_tps": null,
+          "prefill_tps": 196.49291133696968
+        }
+      ]
+    }
+  }
+}
