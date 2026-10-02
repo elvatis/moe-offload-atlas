@@ -45,6 +45,13 @@ def code_corpus(n_tokens, seed=1234):
     return "".join(out)
 
 
+def load_extra(value):
+    if value.startswith("@"):
+        with open(value[1:], encoding="utf-8") as f:
+            return json.load(f)
+    return json.loads(value)
+
+
 def post_stream(url, key, body, timeout):
     req = urllib.request.Request(url + "/chat/completions", data=json.dumps(body).encode(), method="POST",
                                  headers={"Content-Type": "application/json", "Authorization": f"Bearer {key}"})
@@ -101,7 +108,8 @@ def main():
     p.add_argument("--runs", type=int, default=3)
     p.add_argument("--decode-tokens", type=int, default=256)
     p.add_argument("--prefill", default="4096,32768", help="prompt sizes in tokens, comma separated; '' for none")
-    p.add_argument("--extra", type=json.loads, default={}, help="JSON merged into every request body")
+    p.add_argument("--extra", type=load_extra, default={},
+                   help="JSON merged into every request body, or @file.json (avoids shell quoting, e.g. on Windows)")
     p.add_argument("--timeout", type=int, default=1800)
     p.add_argument("--out", default=None, help="directory for <label>.json")
     p.add_argument("--skip-decode", action="store_true", help="only the prefill tests")
