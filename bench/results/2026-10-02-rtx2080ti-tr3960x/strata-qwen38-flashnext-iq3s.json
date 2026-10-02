@@ -1,0 +1,99 @@
+{
+  "label": "strata-qwen38-flashnext-iq3s",
+  "model": "qwen3.8-flash-next-iq3_s",
+  "url": "http://127.0.0.1:8080/v1",
+  "extra": {
+    "reasoning_effort": "none"
+  },
+  "runs": 3,
+  "date": "2026-10-02T11:54:24+0200",
+  "tests": {
+    "decode": {
+      "median_decode_tps": 55.98286226626393,
+      "runs": [
+        {
+          "ttft_s": 1.6187799250001262,
+          "total_s": 6.39730949099976,
+          "prompt_tokens": 72,
+          "completion_tokens": 256,
+          "decode_tps": 53.36369619105953,
+          "prefill_tps": 44.477942237882885
+        },
+        {
+          "ttft_s": 1.65648186099952,
+          "total_s": 6.211447249999765,
+          "prompt_tokens": 72,
+          "completion_tokens": 256,
+          "decode_tps": 55.98286226626393,
+          "prefill_tps": 43.46561329476633
+        },
+        {
+          "ttft_s": 1.6566439440002796,
+          "total_s": 6.206687898999917,
+          "prompt_tokens": 72,
+          "completion_tokens": 256,
+          "decode_tps": 56.04341463994062,
+          "prefill_tps": 43.4613606989939
+        }
+      ]
+    },
+    "prefill-4096": {
+      "median_prefill_tps": 839.3408509973591,
+      "runs": [
+        {
+          "ttft_s": 4.655252079000093,
+          "total_s": 4.655954535000092,
+          "prompt_tokens": 3927,
+          "completion_tokens": 1,
+          "decode_tps": null,
+          "prefill_tps": 843.5633416533451
+        },
+        {
+          "ttft_s": 4.678671358999964,
+          "total_s": 4.679310174999955,
+          "prompt_tokens": 3927,
+          "completion_tokens": 1,
+          "decode_tps": null,
+          "prefill_tps": 839.3408509973591
+        },
+        {
+          "ttft_s": 4.694115853999392,
+          "total_s": 4.694739069999741,
+          "prompt_tokens": 3927,
+          "completion_tokens": 1,
+          "decode_tps": null,
+          "prefill_tps": 836.5792669250359
+        }
+      ]
+    },
+    "prefill-32768": {
+      "median_prefill_tps": 783.3333375225099,
+      "runs": [
+        {
+          "ttft_s": 39.57987457499985,
+          "total_s": 39.58056307100014,
+          "prompt_tokens": 31059,
+          "completion_tokens": 1,
+          "decode_tps": null,
+          "prefill_tps": 784.7169889623158
+        },
+        {
+          "ttft_s": 39.649787022000055,
+          "total_s": 39.65043850800066,
+          "prompt_tokens": 31059,
+          "completion_tokens": 1,
+          "decode_tps": null,
+          "prefill_tps": 783.3333375225099
+        },
+        {
+          "ttft_s": 39.682209742999476,
+          "total_s": 39.68290060900017,
+          "prompt_tokens": 31059,
+          "completion_tokens": 1,
+          "decode_tps": null,
+          "prefill_tps": 782.6933076850455
+        }
+      ]
+    }
+  }
+}
