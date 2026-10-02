@@ -41,9 +41,10 @@ Machine details: [MACHINE.md](MACHINE.md). Same CPU, RAM and `bench.py` as
 
 ## Command lines
 
-Run by `F:\benchmarking\bench-windows.ps1` (steps `strata-setup`, `strata-bench`, `llama-vulkan`, `mimo-bench`).
+Run by [bench/windows/bench-windows.ps1](../../windows/) (steps `strata-setup`, `strata-bench`, `llama-vulkan`,
+`mimo-bench`, `llama-hip-build`, `mimo-hip-bench`).
 
-- **Strata:** `START-HERE.bat --yes --family qwen --model IQ3_S --no-start --data-dir F:\benchmarking\Strata-data`,
+- **Strata:** `START-HERE.bat --yes --family qwen --model IQ3_S --no-start --data-dir <folder>\Strata-data`,
   then `.venv\Scripts\python.exe serve\server.py --engine strata --config strata-iq3_s.json --port 8080`.
   Request extra: `bench/extra/strata-no-thinking.json`.
 - **llama.cpp HIP builds:** HIP SDK 7.2 (clang 21) with VS 2026 Build Tools (MSVC 14.51), `-G Ninja -DGPU_TARGETS=gfx1201

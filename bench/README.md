@@ -20,3 +20,8 @@ BENCH_API_KEY=... python3 bench/bench.py --url http://127.0.0.1:8080/v1 --label 
 
 One folder per machine and date under `results/`, with `MACHINE.md`, one JSON per engine run, and a `README.md`
 listing the exact server command lines. Name what differs from the defaults.
+
+## Windows
+
+[windows/bench-windows.ps1](windows/) runs the same measurements on a Windows PC with an AMD card: Strata's
+ready-made AMD engine and llama.cpp (Vulkan release and HIP builds), including the workarounds those needed.
