@@ -1,0 +1,294 @@
+{
+  "tokens": 8192,
+  "layers": 40,
+  "k": 8,
+  "experts": 256,
+  "domains": [
+    "de",
+    "code",
+    "agent",
+    "en"
+  ],
+  "results": [
+    {
+      "share": 0.12,
+      "size": 1228,
+      "policy": "static-profile",
+      "hit": 0.3527,
+      "perDomain": {
+        "de": 0.3852,
+        "code": 0.3977,
+        "agent": 0.3573,
+        "en": 0.2704
+      },
+      "afterChange": 0.3421,
+      "swapsPerToken": 0.0
+    },
+    {
+      "share": 0.12,
+      "size": 1228,
+      "policy": "static-oracle",
+      "hit": 0.4187,
+      "perDomain": {
+        "de": 0.4504,
+        "code": 0.3887,
+        "agent": 0.4377,
+        "en": 0.3978
+      },
+      "afterChange": 0.4428,
+      "swapsPerToken": 0.0
+    },
+    {
+      "share": 0.12,
+      "size": 1228,
+      "policy": "lru",
+      "hit": 0.6663,
+      "perDomain": {
+        "de": 0.728,
+        "code": 0.6464,
+        "agent": 0.6285,
+        "en": 0.6622
+      },
+      "afterChange": 0.6392,
+      "swapsPerToken": 106.79
+    },
+    {
+      "share": 0.12,
+      "size": 1228,
+      "policy": "lfu-decay",
+      "hit": 0.5629,
+      "perDomain": {
+        "de": 0.6582,
+        "code": 0.4938,
+        "agent": 0.5657,
+        "en": 0.5341
+      },
+      "afterChange": 0.2842,
+      "swapsPerToken": 2.76
+    },
+    {
+      "share": 0.12,
+      "size": 1228,
+      "policy": "profile+lfu",
+      "hit": 0.5631,
+      "perDomain": {
+        "de": 0.6586,
+        "code": 0.4939,
+        "agent": 0.5657,
+        "en": 0.5341
+      },
+      "afterChange": 0.2842,
+      "swapsPerToken": 2.63
+    },
+    {
+      "share": 0.25,
+      "size": 2560,
+      "policy": "static-profile",
+      "hit": 0.57,
+      "perDomain": {
+        "de": 0.5761,
+        "code": 0.5935,
+        "agent": 0.6012,
+        "en": 0.5091
+      },
+      "afterChange": 0.5778,
+      "swapsPerToken": 0.0
+    },
+    {
+      "share": 0.25,
+      "size": 2560,
+      "policy": "static-oracle",
+      "hit": 0.6383,
+      "perDomain": {
+        "de": 0.641,
+        "code": 0.6014,
+        "agent": 0.6808,
+        "en": 0.63
+      },
+      "afterChange": 0.6677,
+      "swapsPerToken": 0.0
+    },
+    {
+      "share": 0.25,
+      "size": 2560,
+      "policy": "lru",
+      "hit": 0.8304,
+      "perDomain": {
+        "de": 0.8608,
+        "code": 0.8037,
+        "agent": 0.8289,
+        "en": 0.8283
+      },
+      "afterChange": 0.8031,
+      "swapsPerToken": 54.27
+    },
+    {
+      "share": 0.25,
+      "size": 2560,
+      "policy": "lfu-decay",
+      "hit": 0.76,
+      "perDomain": {
+        "de": 0.8222,
+        "code": 0.6843,
+        "agent": 0.7924,
+        "en": 0.741
+      },
+      "afterChange": 0.5483,
+      "swapsPerToken": 3.85
+    },
+    {
+      "share": 0.25,
+      "size": 2560,
+      "policy": "profile+lfu",
+      "hit": 0.7602,
+      "perDomain": {
+        "de": 0.8231,
+        "code": 0.6843,
+        "agent": 0.7924,
+        "en": 0.741
+      },
+      "afterChange": 0.5485,
+      "swapsPerToken": 3.63
+    },
+    {
+      "share": 0.36,
+      "size": 3686,
+      "policy": "static-profile",
+      "hit": 0.7088,
+      "perDomain": {
+        "de": 0.6945,
+        "code": 0.717,
+        "agent": 0.7561,
+        "en": 0.6674
+      },
+      "afterChange": 0.7268,
+      "swapsPerToken": 0.0
+    },
+    {
+      "share": 0.36,
+      "size": 3686,
+      "policy": "static-oracle",
+      "hit": 0.766,
+      "perDomain": {
+        "de": 0.7555,
+        "code": 0.7338,
+        "agent": 0.8193,
+        "en": 0.7553
+      },
+      "afterChange": 0.7958,
+      "swapsPerToken": 0.0
+    },
+    {
+      "share": 0.36,
+      "size": 3686,
+      "policy": "lru",
+      "hit": 0.9054,
+      "perDomain": {
+        "de": 0.9214,
+        "code": 0.8761,
+        "agent": 0.9175,
+        "en": 0.9068
+      },
+      "afterChange": 0.873,
+      "swapsPerToken": 30.26
+    },
+    {
+      "share": 0.36,
+      "size": 3686,
+      "policy": "lfu-decay",
+      "hit": 0.8574,
+      "perDomain": {
+        "de": 0.8962,
+        "code": 0.792,
+        "agent": 0.8944,
+        "en": 0.8469
+      },
+      "afterChange": 0.7086,
+      "swapsPerToken": 4.02
+    },
+    {
+      "share": 0.36,
+      "size": 3686,
+      "policy": "profile+lfu",
+      "hit": 0.8578,
+      "perDomain": {
+        "de": 0.8979,
+        "code": 0.7921,
+        "agent": 0.8944,
+        "en": 0.8469
+      },
+      "afterChange": 0.7088,
+      "swapsPerToken": 3.7
+    },
+    {
+      "share": 0.5,
+      "size": 5120,
+      "policy": "static-profile",
+      "hit": 0.8312,
+      "perDomain": {
+        "de": 0.8131,
+        "code": 0.8315,
+        "agent": 0.8792,
+        "en": 0.8011
+      },
+      "afterChange": 0.8471,
+      "swapsPerToken": 0.0
+    },
+    {
+      "share": 0.5,
+      "size": 5120,
+      "policy": "static-oracle",
+      "hit": 0.876,
+      "perDomain": {
+        "de": 0.8608,
+        "code": 0.8526,
+        "agent": 0.9187,
+        "en": 0.8718
+      },
+      "afterChange": 0.8973,
+      "swapsPerToken": 0.0
+    },
+    {
+      "share": 0.5,
+      "size": 5120,
+      "policy": "lru",
+      "hit": 0.9557,
+      "perDomain": {
+        "de": 0.9627,
+        "code": 0.9356,
+        "agent": 0.9659,
+        "en": 0.9585
+      },
+      "afterChange": 0.9193,
+      "swapsPerToken": 14.18
+    },
+    {
+      "share": 0.5,
+      "size": 5120,
+      "policy": "lfu-decay",
+      "hit": 0.9303,
+      "perDomain": {
+        "de": 0.9487,
+        "code": 0.887,
+        "agent": 0.958,
+        "en": 0.9275
+      },
+      "afterChange": 0.8484,
+      "swapsPerToken": 3.89
+    },
+    {
+      "share": 0.5,
+      "size": 5120,
+      "policy": "profile+lfu",
+      "hit": 0.9311,
+      "perDomain": {
+        "de": 0.9518,
+        "code": 0.8871,
+        "agent": 0.958,
+        "en": 0.9275
+      },
+      "afterChange": 0.8486,
+      "swapsPerToken": 3.44
+    }
+  ]
+}

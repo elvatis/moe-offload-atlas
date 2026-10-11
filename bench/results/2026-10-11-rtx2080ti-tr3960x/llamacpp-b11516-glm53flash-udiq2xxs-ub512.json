@@ -1,0 +1,72 @@
+{
+  "label": "llamacpp-b11516-glm53flash-udiq2xxs-ub512",
+  "model": "models/GLM-5.3-Flash-GGUF/UD-IQ2_XXS/GLM-5.3-Flash-UD-IQ2_XXS-00001-of-00004.gguf",
+  "url": "http://127.0.0.1:8799/v1",
+  "extra": {
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "runs": 3,
+  "date": "2026-10-11T09:34:18+0200",
+  "tests": {
+    "decode": {
+      "median_decode_tps": 11.67809087347741,
+      "runs": [
+        {
+          "ttft_s": 5.098866847998579,
+          "total_s": 26.93462774100044,
+          "prompt_tokens": 63,
+          "completion_tokens": 256,
+          "decode_tps": 11.67809087347741,
+          "prefill_tps": 12.355686445259682
+        },
+        {
+          "ttft_s": 5.078133221999451,
+          "total_s": 27.555829270997492,
+          "prompt_tokens": 64,
+          "completion_tokens": 256,
+          "decode_tps": 11.344579063803419,
+          "prefill_tps": 12.603056517450089
+        },
+        {
+          "ttft_s": 5.152964166001766,
+          "total_s": 26.479760556001565,
+          "prompt_tokens": 64,
+          "completion_tokens": 256,
+          "decode_tps": 11.956788789879866,
+          "prefill_tps": 12.42003591297205
+        }
+      ]
+    },
+    "prefill-4096": {
+      "median_prefill_tps": 59.11252942298812,
+      "runs": [
+        {
+          "ttft_s": 57.63583513100457,
+          "total_s": 57.63594762000139,
+          "prompt_tokens": 3407,
+          "completion_tokens": 1,
+          "decode_tps": null,
+          "prefill_tps": 59.11252942298812
+        },
+        {
+          "ttft_s": 57.676493962004315,
+          "total_s": 57.67659236200416,
+          "prompt_tokens": 3408,
+          "completion_tokens": 1,
+          "decode_tps": null,
+          "prefill_tps": 59.0881963498873
+        },
+        {
+          "ttft_s": 57.60073665100208,
+          "total_s": 57.60094863000268,
+          "prompt_tokens": 3409,
+          "completion_tokens": 1,
+          "decode_tps": null,
+          "prefill_tps": 59.18327087819794
+        }
+      ]
+    }
+  }
+}

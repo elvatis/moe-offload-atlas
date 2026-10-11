@@ -1,0 +1,9 @@
+{"date": "2026-10-10T22:08:58Z", "model": "Qwen3.6-35B-A3B-Q4_K_M-de.gguf", "reference": "Qwen3.6-35B-A3B-Q8_0.gguf", "lang": "de", "chunks": 60, "ppl": 4.427749, "kld": 0.024015, "sameTop": 93.222}
+{"date": "2026-10-10T22:10:44Z", "model": "Qwen3.6-35B-A3B-keep75-Q4_K_M-de.gguf", "reference": "Qwen3.6-35B-A3B-Q8_0.gguf", "lang": "de", "chunks": 60, "ppl": 4.689971, "kld": 0.099775, "sameTop": 89.248}
+{"date": "2026-10-10T22:12:11Z", "model": "Qwen3.6-35B-A3B-keep50-Q4_K_M-de.gguf", "reference": "Qwen3.6-35B-A3B-Q8_0.gguf", "lang": "de", "chunks": 60, "ppl": 6.117314, "kld": 0.382151, "sameTop": 79.562}
+{"date": "2026-10-10T22:16:22Z", "model": "Qwen3.6-35B-A3B-Q4_K_M-de.gguf", "reference": "Qwen3.6-35B-A3B-Q8_0.gguf", "lang": "en", "chunks": 60, "ppl": 6.246812, "kld": 0.027425, "sameTop": 92.719}
+{"date": "2026-10-10T22:17:41Z", "model": "Qwen3.6-35B-A3B-keep75-Q4_K_M-de.gguf", "reference": "Qwen3.6-35B-A3B-Q8_0.gguf", "lang": "en", "chunks": 60, "ppl": 6.46038, "kld": 0.072119, "sameTop": 90.209}
+{"date": "2026-10-10T22:18:40Z", "model": "Qwen3.6-35B-A3B-keep50-Q4_K_M-de.gguf", "reference": "Qwen3.6-35B-A3B-Q8_0.gguf", "lang": "en", "chunks": 60, "ppl": 7.252773, "kld": 0.207539, "sameTop": 83.497}
+{"date": "2026-10-10T22:22:50Z", "model": "Qwen3.6-35B-A3B-Q4_K_M-de.gguf", "reference": "Qwen3.6-35B-A3B-Q8_0.gguf", "lang": "code", "chunks": 60, "ppl": 2.048936, "kld": 0.049503, "sameTop": 96.399}
+{"date": "2026-10-10T22:24:07Z", "model": "Qwen3.6-35B-A3B-keep75-Q4_K_M-de.gguf", "reference": "Qwen3.6-35B-A3B-Q8_0.gguf", "lang": "code", "chunks": 60, "ppl": 2.174536, "kld": 0.170133, "sameTop": 92.647}
+{"date": "2026-10-10T22:25:05Z", "model": "Qwen3.6-35B-A3B-keep50-Q4_K_M-de.gguf", "reference": "Qwen3.6-35B-A3B-Q8_0.gguf", "lang": "code", "chunks": 60, "ppl": 2.52266, "kld": 0.349292, "sameTop": 88.627}

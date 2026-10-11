@@ -1,0 +1,101 @@
+{
+  "label": "llamacpp-b11516-qwen3-coder-next-q4km-cmoe-cache6000",
+  "model": "models/Qwen3-Coder-Next-GGUF/Qwen3-Coder-Next-Q4_K_M.gguf",
+  "url": "http://127.0.0.1:8799/v1",
+  "extra": {
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "runs": 3,
+  "date": "2026-10-11T09:17:44+0200",
+  "tests": {
+    "decode": {
+      "median_decode_tps": 32.12428104382387,
+      "runs": [
+        {
+          "ttft_s": 1.2670746759977192,
+          "total_s": 9.196487822999188,
+          "prompt_tokens": 68,
+          "completion_tokens": 256,
+          "decode_tps": 32.158748103121475,
+          "prefill_tps": 53.66692373238024
+        },
+        {
+          "ttft_s": 1.5223105379991466,
+          "total_s": 9.920242339998367,
+          "prompt_tokens": 68,
+          "completion_tokens": 256,
+          "decode_tps": 30.364619052907102,
+          "prefill_tps": 44.66894125910473
+        },
+        {
+          "ttft_s": 1.3251386859992635,
+          "total_s": 9.263059527002042,
+          "prompt_tokens": 68,
+          "completion_tokens": 256,
+          "decode_tps": 32.12428104382387,
+          "prefill_tps": 51.3153836035829
+        }
+      ]
+    },
+    "prefill-4096": {
+      "median_prefill_tps": 524.826647704888,
+      "runs": [
+        {
+          "ttft_s": 6.843895686994074,
+          "total_s": 6.844014286994934,
+          "prompt_tokens": 3559,
+          "completion_tokens": 1,
+          "decode_tps": null,
+          "prefill_tps": 520.0254595877919
+        },
+        {
+          "ttft_s": 6.781286764999095,
+          "total_s": 6.781432703995961,
+          "prompt_tokens": 3559,
+          "completion_tokens": 1,
+          "decode_tps": null,
+          "prefill_tps": 524.826647704888
+        },
+        {
+          "ttft_s": 6.754110252004466,
+          "total_s": 6.75428338200436,
+          "prompt_tokens": 3559,
+          "completion_tokens": 1,
+          "decode_tps": null,
+          "prefill_tps": 526.9383926541279
+        }
+      ]
+    },
+    "prefill-32768": {
+      "median_prefill_tps": 589.6636740152181,
+      "runs": [
+        {
+          "ttft_s": 47.67682528800651,
+          "total_s": 47.67737368500093,
+          "prompt_tokens": 28185,
+          "completion_tokens": 1,
+          "decode_tps": null,
+          "prefill_tps": 591.1677178532725
+        },
+        {
+          "ttft_s": 47.84981880499981,
+          "total_s": 47.85030203300266,
+          "prompt_tokens": 28185,
+          "completion_tokens": 1,
+          "decode_tps": null,
+          "prefill_tps": 589.030443665023
+        },
+        {
+          "ttft_s": 47.79843365299894,
+          "total_s": 47.798895931002335,
+          "prompt_tokens": 28185,
+          "completion_tokens": 1,
+          "decode_tps": null,
+          "prefill_tps": 589.6636740152181
+        }
+      ]
+    }
+  }
+}

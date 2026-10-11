@@ -5,6 +5,11 @@ on the GPU is fixed at load time, so decode on the offloaded layers runs at RAM 
 
 ## Upstream threads
 
+- **Merged:** [#29887](https://github.com/ggml-org/llama.cpp/pull/29887) (2026-10-07), `--moe-cache-mib N`: a GPU LRU
+  cache for the experts of CPU-resident layers; misses are uploaded and computed on the GPU; batches of up to 32
+  tokens only (writing, MTP drafts). Slots are shared by all layers of a group (same expert layout and type); a group
+  with fewer slots than one layer's experts per token is not cached. Multi-GPU:
+  [#30112](https://github.com/ggml-org/llama.cpp/pull/30112) (2026-10-08). Stats at exit with `-lv 4`.
 - [#24524](https://github.com/ggml-org/llama.cpp/pull/24524) (closed 2026-06-12): CUDA-side adaptive cache; the
   `MUL_MAT_ID` node stays on the CPU, thread 0 dispatches the hit rows to the GPU while the other threads compute the
   misses. Closed as too large; maintainer asked for an RFC.
@@ -34,4 +39,11 @@ eviction (swap only if it pays for its upload), CPU/GPU overlap within a layer, 
 
 ## Measured here
 
-[2026-10-02, RTX 2080 Ti + Threadripper 3960X](../bench/results/2026-10-02-rtx2080ti-tr3960x/).
+- [2026-10-02, RTX 2080 Ti + Threadripper 3960X](../bench/results/2026-10-02-rtx2080ti-tr3960x/): the neurall fork.
+- [2026-10-11, same machine](../bench/results/2026-10-11-rtx2080ti-tr3960x/): the merged `--moe-cache-mib` on PCIe 3.0.
+  - Qwen3.6-35B-A3B: 31-53 tok/s with 2-6 GB of cache (57-83 % hits, 98-255 MiB copied per token) against 58.5 with
+    `--n-cpu-moe 32`; with MTP 46 against 71.
+  - GLM-5.3-Flash: 2 GB of cache = 259 slots for 39 layers, one token needs 312, so it evicts its own experts: 0.7 %
+    hits, 2.3 GiB per token, 3.6 instead of 15 tok/s.
+    [Reported on #29887](https://github.com/ggml-org/llama.cpp/pull/29887#issuecomment-6106433768).
+  - A trace simulation: LRU 91 % hits with 30 copies per token at 36 % cache, LFU with decay and admission 86 % with 4.

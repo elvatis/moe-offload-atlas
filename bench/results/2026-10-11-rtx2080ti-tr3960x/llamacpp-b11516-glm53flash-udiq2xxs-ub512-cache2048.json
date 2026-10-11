@@ -1,0 +1,43 @@
+{
+  "label": "llamacpp-b11516-glm53flash-udiq2xxs-ub512-cache2048",
+  "model": "models/GLM-5.3-Flash-GGUF/UD-IQ2_XXS/GLM-5.3-Flash-UD-IQ2_XXS-00001-of-00004.gguf",
+  "url": "http://127.0.0.1:8799/v1",
+  "extra": {
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "runs": 3,
+  "date": "2026-10-11T09:38:58+0200",
+  "tests": {
+    "decode": {
+      "median_decode_tps": 3.5406563283354586,
+      "runs": [
+        {
+          "ttft_s": 5.56279359900509,
+          "total_s": 77.22988731100486,
+          "prompt_tokens": 63,
+          "completion_tokens": 256,
+          "decode_tps": 3.558118332867507,
+          "prefill_tps": 11.32524492932249
+        },
+        {
+          "ttft_s": 5.519211083999835,
+          "total_s": 77.5397565289968,
+          "prompt_tokens": 64,
+          "completion_tokens": 256,
+          "decode_tps": 3.5406563283354586,
+          "prefill_tps": 11.59586017384544
+        },
+        {
+          "ttft_s": 5.621275682999112,
+          "total_s": 77.96012617800443,
+          "prompt_tokens": 64,
+          "completion_tokens": 256,
+          "decode_tps": 3.525076749976925,
+          "prefill_tps": 11.385316004614483
+        }
+      ]
+    }
+  }
+}

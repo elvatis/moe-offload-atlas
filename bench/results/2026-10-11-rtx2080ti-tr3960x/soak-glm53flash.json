@@ -1,0 +1,1258 @@
+{
+ "summary": {
+  "event": "summary",
+  "hours": 4.0,
+  "ctx": 262144,
+  "requests": 138,
+  "serverStarts": 2,
+  "crashes": [],
+  "longestContext": 218356,
+  "longestAnswer": 4096,
+  "args": "-ngl 99 --cpu-moe -fa on -ctk q4_0 -ctv q4_0 --kv-offload --reasoning-preserve --spec-type ngram-map-k4v --chat-template-kwargs '{\"reasoning_effort\":\"max\"}' --temp 1.0 --top-p 0.95 -t 24 --parallel 1",
+  "time": "2026-10-11 05:03:28"
+ },
+ "requests": [
+  {
+   "t": "01:02:38",
+   "prompt": 244,
+   "written": 63,
+   "maxTokens": 256,
+   "s": 12.3,
+   "tools": 2,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "01:04:43",
+   "prompt": 7168,
+   "written": 100,
+   "maxTokens": 1024,
+   "s": 125.3,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "01:06:38",
+   "prompt": 13844,
+   "written": 70,
+   "maxTokens": 4096,
+   "s": 114.3,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "01:06:53",
+   "prompt": 14457,
+   "written": 81,
+   "maxTokens": 1024,
+   "s": 15.7,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "01:07:19",
+   "prompt": 15011,
+   "written": 242,
+   "maxTokens": 256,
+   "s": 25.2,
+   "tools": 2,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "01:09:53",
+   "prompt": 22459,
+   "written": 413,
+   "maxTokens": 4096,
+   "s": 154.2,
+   "tools": 2,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "01:12:18",
+   "prompt": 26081,
+   "written": 1024,
+   "maxTokens": 1024,
+   "s": 144.8,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "01:12:43",
+   "prompt": 27119,
+   "written": 362,
+   "maxTokens": 4096,
+   "s": 25.7,
+   "tools": 2,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "01:13:51",
+   "prompt": 29843,
+   "written": 256,
+   "maxTokens": 256,
+   "s": 67.8,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "01:18:24",
+   "prompt": 30113,
+   "written": 3314,
+   "maxTokens": 4096,
+   "s": 272.5,
+   "tools": 0,
+   "finish": "stop"
+  },
+  {
+   "t": "01:18:32",
+   "prompt": 33441,
+   "written": 104,
+   "maxTokens": 1024,
+   "s": 8.3,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "01:22:06",
+   "prompt": 36694,
+   "written": 1989,
+   "maxTokens": 4096,
+   "s": 214.6,
+   "tools": 3,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "01:30:12",
+   "prompt": 54681,
+   "written": 2619,
+   "maxTokens": 4096,
+   "s": 485.5,
+   "tools": 0,
+   "finish": "stop"
+  },
+  {
+   "t": "01:30:25",
+   "prompt": 57314,
+   "written": 113,
+   "maxTokens": 256,
+   "s": 13.6,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "01:32:38",
+   "prompt": 62786,
+   "written": 510,
+   "maxTokens": 4096,
+   "s": 132.5,
+   "tools": 2,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "01:38:05",
+   "prompt": 76377,
+   "written": 1024,
+   "maxTokens": 1024,
+   "s": 326.8,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "01:38:07",
+   "prompt": 77416,
+   "written": 13,
+   "maxTokens": 1024,
+   "s": 2.1,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "01:40:00",
+   "prompt": 79667,
+   "written": 725,
+   "maxTokens": 1024,
+   "s": 113.3,
+   "tools": 2,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "01:42:14",
+   "prompt": 86462,
+   "written": 256,
+   "maxTokens": 256,
+   "s": 133.5,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "01:42:17",
+   "prompt": 86730,
+   "written": 39,
+   "maxTokens": 1024,
+   "s": 3.8,
+   "tools": 2,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "01:46:22",
+   "prompt": 95222,
+   "written": 1024,
+   "maxTokens": 1024,
+   "s": 244.5,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "01:47:49",
+   "prompt": 96260,
+   "written": 827,
+   "maxTokens": 4096,
+   "s": 87.2,
+   "tools": 2,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "01:49:34",
+   "prompt": 100635,
+   "written": 358,
+   "maxTokens": 1024,
+   "s": 105.1,
+   "tools": 2,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "01:50:43",
+   "prompt": 102810,
+   "written": 323,
+   "maxTokens": 1024,
+   "s": 68.2,
+   "tools": 2,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "01:53:24",
+   "prompt": 110340,
+   "written": 231,
+   "maxTokens": 1024,
+   "s": 161.9,
+   "tools": 2,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "01:55:26",
+   "prompt": 116082,
+   "written": 256,
+   "maxTokens": 256,
+   "s": 121.4,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "01:56:40",
+   "prompt": 116353,
+   "written": 768,
+   "maxTokens": 1024,
+   "s": 73.8,
+   "tools": 3,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "02:01:30",
+   "prompt": 131419,
+   "written": 256,
+   "maxTokens": 256,
+   "s": 290.0,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "02:09:25",
+   "prompt": 131689,
+   "written": 4096,
+   "maxTokens": 4096,
+   "s": 475.1,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "02:18:21",
+   "prompt": 135798,
+   "written": 4096,
+   "maxTokens": 4096,
+   "s": 536.1,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "02:20:27",
+   "prompt": 139909,
+   "written": 494,
+   "maxTokens": 1024,
+   "s": 125.9,
+   "tools": 3,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "02:23:55",
+   "prompt": 149221,
+   "written": 391,
+   "maxTokens": 1024,
+   "s": 208.4,
+   "tools": 3,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "02:25:57",
+   "prompt": 154474,
+   "written": 256,
+   "maxTokens": 256,
+   "s": 122.2,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "02:26:34",
+   "prompt": 154742,
+   "written": 425,
+   "maxTokens": 1024,
+   "s": 36.9,
+   "tools": 2,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "02:27:37",
+   "prompt": 157093,
+   "written": 203,
+   "maxTokens": 1024,
+   "s": 62.6,
+   "tools": 2,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "02:29:59",
+   "prompt": 159740,
+   "written": 781,
+   "maxTokens": 1024,
+   "s": 142.0,
+   "tools": 0,
+   "finish": "stop"
+  },
+  {
+   "t": "02:30:29",
+   "prompt": 160534,
+   "written": 256,
+   "maxTokens": 256,
+   "s": 30.3,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "02:30:46",
+   "prompt": 160806,
+   "written": 194,
+   "maxTokens": 256,
+   "s": 17.1,
+   "tools": 2,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "02:35:30",
+   "prompt": 174065,
+   "written": 241,
+   "maxTokens": 1024,
+   "s": 283.9,
+   "tools": 2,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "02:37:01",
+   "prompt": 177370,
+   "written": 256,
+   "maxTokens": 256,
+   "s": 90.5,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "02:37:30",
+   "prompt": 177637,
+   "written": 313,
+   "maxTokens": 1024,
+   "s": 29.4,
+   "tools": 2,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "02:40:28",
+   "prompt": 181208,
+   "written": 771,
+   "maxTokens": 1024,
+   "s": 177.6,
+   "tools": 0,
+   "finish": "stop"
+  },
+  {
+   "t": "02:41:21",
+   "prompt": 181992,
+   "written": 267,
+   "maxTokens": 1024,
+   "s": 53.2,
+   "tools": 2,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "02:44:53",
+   "prompt": 187816,
+   "written": 701,
+   "maxTokens": 4096,
+   "s": 212.3,
+   "tools": 0,
+   "finish": "stop"
+  },
+  {
+   "t": "02:45:29",
+   "prompt": 188531,
+   "written": 158,
+   "maxTokens": 1024,
+   "s": 35.7,
+   "tools": 2,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "02:47:42",
+   "prompt": 190801,
+   "written": 703,
+   "maxTokens": 1024,
+   "s": 132.9,
+   "tools": 0,
+   "finish": "stop"
+  },
+  {
+   "t": "02:48:32",
+   "prompt": 191517,
+   "written": 225,
+   "maxTokens": 1024,
+   "s": 50.5,
+   "tools": 2,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "02:51:50",
+   "prompt": 198190,
+   "written": 560,
+   "maxTokens": 1024,
+   "s": 198.3,
+   "tools": 0,
+   "finish": "stop"
+  },
+  {
+   "t": "02:52:29",
+   "prompt": 198759,
+   "written": 247,
+   "maxTokens": 1024,
+   "s": 39.1,
+   "tools": 2,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "02:56:58",
+   "prompt": 208513,
+   "written": 596,
+   "maxTokens": 4096,
+   "s": 268.3,
+   "tools": 0,
+   "finish": "stop"
+  },
+  {
+   "t": "02:57:44",
+   "prompt": 209118,
+   "written": 262,
+   "maxTokens": 4096,
+   "s": 46.2,
+   "tools": 2,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "03:02:03",
+   "prompt": 217715,
+   "written": 641,
+   "maxTokens": 1024,
+   "s": 259.4,
+   "tools": 0,
+   "finish": "stop"
+  },
+  {
+   "t": "03:02:23",
+   "prompt": 265,
+   "written": 175,
+   "maxTokens": 1024,
+   "s": 20.3,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "03:03:22",
+   "prompt": 3432,
+   "written": 100,
+   "maxTokens": 256,
+   "s": 58.1,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "03:04:26",
+   "prompt": 6333,
+   "written": 209,
+   "maxTokens": 256,
+   "s": 64.5,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "03:04:42",
+   "prompt": 7051,
+   "written": 108,
+   "maxTokens": 256,
+   "s": 16.1,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "03:04:56",
+   "prompt": 7616,
+   "written": 76,
+   "maxTokens": 1024,
+   "s": 13.8,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "03:07:04",
+   "prompt": 13928,
+   "written": 256,
+   "maxTokens": 256,
+   "s": 128.3,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "03:07:23",
+   "prompt": 14196,
+   "written": 206,
+   "maxTokens": 1024,
+   "s": 18.7,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "03:07:56",
+   "prompt": 15765,
+   "written": 104,
+   "maxTokens": 4096,
+   "s": 33.5,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "03:08:55",
+   "prompt": 18683,
+   "written": 90,
+   "maxTokens": 1024,
+   "s": 58.5,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "03:09:56",
+   "prompt": 21594,
+   "written": 105,
+   "maxTokens": 1024,
+   "s": 61.5,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "03:10:13",
+   "prompt": 22243,
+   "written": 88,
+   "maxTokens": 256,
+   "s": 16.6,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "03:11:24",
+   "prompt": 25739,
+   "written": 95,
+   "maxTokens": 4096,
+   "s": 71.1,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "03:13:43",
+   "prompt": 32660,
+   "written": 105,
+   "maxTokens": 256,
+   "s": 138.5,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "03:16:50",
+   "prompt": 39418,
+   "written": 1024,
+   "maxTokens": 1024,
+   "s": 187.6,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "03:16:59",
+   "prompt": 40456,
+   "written": 118,
+   "maxTokens": 4096,
+   "s": 9.0,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "03:18:53",
+   "prompt": 43782,
+   "written": 765,
+   "maxTokens": 1024,
+   "s": 113.9,
+   "tools": 0,
+   "finish": "stop"
+  },
+  {
+   "t": "03:20:24",
+   "prompt": 44559,
+   "written": 1024,
+   "maxTokens": 1024,
+   "s": 90.6,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "03:20:47",
+   "prompt": 45597,
+   "written": 260,
+   "maxTokens": 1024,
+   "s": 23.0,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "03:24:09",
+   "prompt": 49197,
+   "written": 1986,
+   "maxTokens": 4096,
+   "s": 201.9,
+   "tools": 0,
+   "finish": "stop"
+  },
+  {
+   "t": "03:24:15",
+   "prompt": 51192,
+   "written": 76,
+   "maxTokens": 1024,
+   "s": 5.9,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "03:26:09",
+   "prompt": 56662,
+   "written": 256,
+   "maxTokens": 256,
+   "s": 114.1,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "03:27:37",
+   "prompt": 56932,
+   "written": 1024,
+   "maxTokens": 1024,
+   "s": 88.2,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "03:29:19",
+   "prompt": 57970,
+   "written": 1024,
+   "maxTokens": 1024,
+   "s": 102.0,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "03:29:44",
+   "prompt": 59009,
+   "written": 167,
+   "maxTokens": 1024,
+   "s": 25.2,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "03:31:22",
+   "prompt": 59709,
+   "written": 1024,
+   "maxTokens": 1024,
+   "s": 97.9,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "03:31:38",
+   "prompt": 60743,
+   "written": 99,
+   "maxTokens": 1024,
+   "s": 16.3,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "03:32:10",
+   "prompt": 61296,
+   "written": 256,
+   "maxTokens": 256,
+   "s": 31.4,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "03:32:23",
+   "prompt": 61563,
+   "written": 115,
+   "maxTokens": 256,
+   "s": 13.3,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "03:35:14",
+   "prompt": 65226,
+   "written": 1140,
+   "maxTokens": 4096,
+   "s": 171.1,
+   "tools": 0,
+   "finish": "stop"
+  },
+  {
+   "t": "03:35:24",
+   "prompt": 66376,
+   "written": 73,
+   "maxTokens": 1024,
+   "s": 10.1,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "03:38:05",
+   "prompt": 69708,
+   "written": 1024,
+   "maxTokens": 1024,
+   "s": 160.5,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "03:38:25",
+   "prompt": 70746,
+   "written": 142,
+   "maxTokens": 1024,
+   "s": 19.7,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "03:39:36",
+   "prompt": 73647,
+   "written": 256,
+   "maxTokens": 256,
+   "s": 71.7,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "03:39:46",
+   "prompt": 73919,
+   "written": 131,
+   "maxTokens": 1024,
+   "s": 10.2,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "03:40:32",
+   "prompt": 75462,
+   "written": 256,
+   "maxTokens": 256,
+   "s": 45.7,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "03:42:32",
+   "prompt": 75732,
+   "written": 1024,
+   "maxTokens": 1024,
+   "s": 119.8,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "03:43:05",
+   "prompt": 76771,
+   "written": 197,
+   "maxTokens": 1024,
+   "s": 33.1,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "03:45:05",
+   "prompt": 78344,
+   "written": 1024,
+   "maxTokens": 1024,
+   "s": 120.0,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "03:45:41",
+   "prompt": 79382,
+   "written": 256,
+   "maxTokens": 256,
+   "s": 36.0,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "03:46:03",
+   "prompt": 79650,
+   "written": 119,
+   "maxTokens": 4096,
+   "s": 21.9,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "03:48:23",
+   "prompt": 86381,
+   "written": 256,
+   "maxTokens": 256,
+   "s": 139.7,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "03:48:41",
+   "prompt": 86649,
+   "written": 116,
+   "maxTokens": 1024,
+   "s": 18.0,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "03:49:53",
+   "prompt": 89381,
+   "written": 256,
+   "maxTokens": 256,
+   "s": 72.0,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "03:50:07",
+   "prompt": 89649,
+   "written": 116,
+   "maxTokens": 256,
+   "s": 14.4,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "03:52:54",
+   "prompt": 93368,
+   "written": 1024,
+   "maxTokens": 1024,
+   "s": 166.8,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "03:53:54",
+   "prompt": 94406,
+   "written": 338,
+   "maxTokens": 1024,
+   "s": 59.8,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "03:57:30",
+   "prompt": 101666,
+   "written": 1024,
+   "maxTokens": 1024,
+   "s": 216.3,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "03:57:52",
+   "prompt": 102705,
+   "written": 163,
+   "maxTokens": 256,
+   "s": 21.5,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "04:00:58",
+   "prompt": 108197,
+   "written": 1024,
+   "maxTokens": 1024,
+   "s": 185.8,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "04:01:51",
+   "prompt": 109237,
+   "written": 549,
+   "maxTokens": 1024,
+   "s": 53.7,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "04:03:50",
+   "prompt": 111202,
+   "written": 1024,
+   "maxTokens": 1024,
+   "s": 118.4,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "04:04:01",
+   "prompt": 112237,
+   "written": 124,
+   "maxTokens": 4096,
+   "s": 11.5,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "04:07:25",
+   "prompt": 117712,
+   "written": 1024,
+   "maxTokens": 1024,
+   "s": 204.0,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "04:07:45",
+   "prompt": 118750,
+   "written": 128,
+   "maxTokens": 256,
+   "s": 19.8,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "04:11:20",
+   "prompt": 122299,
+   "written": 1024,
+   "maxTokens": 1024,
+   "s": 215.4,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "04:14:19",
+   "prompt": 123336,
+   "written": 1024,
+   "maxTokens": 1024,
+   "s": 178.6,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "04:17:23",
+   "prompt": 124374,
+   "written": 1024,
+   "maxTokens": 1024,
+   "s": 183.8,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "04:17:41",
+   "prompt": 125413,
+   "written": 226,
+   "maxTokens": 4096,
+   "s": 18.1,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "04:20:01",
+   "prompt": 126161,
+   "written": 1091,
+   "maxTokens": 4096,
+   "s": 140.0,
+   "tools": 0,
+   "finish": "stop"
+  },
+  {
+   "t": "04:20:11",
+   "prompt": 127265,
+   "written": 113,
+   "maxTokens": 1024,
+   "s": 9.9,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "04:22:32",
+   "prompt": 133710,
+   "written": 256,
+   "maxTokens": 256,
+   "s": 141.6,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "04:22:46",
+   "prompt": 133978,
+   "written": 104,
+   "maxTokens": 4096,
+   "s": 14.0,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "04:26:41",
+   "prompt": 140084,
+   "written": 1024,
+   "maxTokens": 1024,
+   "s": 234.5,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "04:27:13",
+   "prompt": 141123,
+   "written": 163,
+   "maxTokens": 256,
+   "s": 31.8,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "04:30:00",
+   "prompt": 144850,
+   "written": 1011,
+   "maxTokens": 1024,
+   "s": 167.1,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "04:32:36",
+   "prompt": 147356,
+   "written": 1148,
+   "maxTokens": 4096,
+   "s": 155.8,
+   "tools": 0,
+   "finish": "stop"
+  },
+  {
+   "t": "04:32:50",
+   "prompt": 148517,
+   "written": 113,
+   "maxTokens": 4096,
+   "s": 14.5,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "04:36:21",
+   "prompt": 154206,
+   "written": 1024,
+   "maxTokens": 1024,
+   "s": 210.5,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "04:36:36",
+   "prompt": 155241,
+   "written": 114,
+   "maxTokens": 1024,
+   "s": 14.9,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "04:39:11",
+   "prompt": 156823,
+   "written": 1054,
+   "maxTokens": 4096,
+   "s": 155.1,
+   "tools": 0,
+   "finish": "stop"
+  },
+  {
+   "t": "04:39:43",
+   "prompt": 157891,
+   "written": 171,
+   "maxTokens": 4096,
+   "s": 32.1,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "04:42:09",
+   "prompt": 161552,
+   "written": 749,
+   "maxTokens": 1024,
+   "s": 146.0,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "04:43:51",
+   "prompt": 162760,
+   "written": 947,
+   "maxTokens": 4096,
+   "s": 102.6,
+   "tools": 0,
+   "finish": "stop"
+  },
+  {
+   "t": "04:44:10",
+   "prompt": 163721,
+   "written": 121,
+   "maxTokens": 256,
+   "s": 19.0,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "04:46:52",
+   "prompt": 165579,
+   "written": 925,
+   "maxTokens": 1024,
+   "s": 161.7,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "04:49:41",
+   "prompt": 169455,
+   "written": 1024,
+   "maxTokens": 1024,
+   "s": 169.1,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "04:52:30",
+   "prompt": 170493,
+   "written": 1024,
+   "maxTokens": 1024,
+   "s": 168.8,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "04:52:51",
+   "prompt": 171533,
+   "written": 141,
+   "maxTokens": 1024,
+   "s": 20.7,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "04:55:04",
+   "prompt": 173210,
+   "written": 1024,
+   "maxTokens": 1024,
+   "s": 133.0,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "04:55:15",
+   "prompt": 174245,
+   "written": 114,
+   "maxTokens": 4096,
+   "s": 11.0,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "04:57:18",
+   "prompt": 175882,
+   "written": 892,
+   "maxTokens": 4096,
+   "s": 123.7,
+   "tools": 0,
+   "finish": "stop"
+  },
+  {
+   "t": "04:57:28",
+   "prompt": 176787,
+   "written": 108,
+   "maxTokens": 1024,
+   "s": 9.9,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "04:58:14",
+   "prompt": 177583,
+   "written": 256,
+   "maxTokens": 256,
+   "s": 46.1,
+   "tools": 0,
+   "finish": "length"
+  },
+  {
+   "t": "04:58:42",
+   "prompt": 177855,
+   "written": 139,
+   "maxTokens": 1024,
+   "s": 27.7,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "04:59:46",
+   "prompt": 178432,
+   "written": 414,
+   "maxTokens": 1024,
+   "s": 64.0,
+   "tools": 1,
+   "finish": "tool_calls"
+  },
+  {
+   "t": "05:03:21",
+   "prompt": 184989,
+   "written": 922,
+   "maxTokens": 1024,
+   "s": 215.4,
+   "tools": 0,
+   "finish": "stop"
+  }
+ ]
+}

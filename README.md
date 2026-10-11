@@ -37,7 +37,14 @@ below bring 1 and 2 to every architecture llama.cpp supports.
 
 ## Expert cache in llama.cpp: the state of play
 
-Not merged upstream as of 2026-10-02. Maintainers asked for an RFC because the first PR was too large to review.
+**Merged upstream on 2026-10-07** as [#29887](https://github.com/ggml-org/llama.cpp/pull/29887) (am17an, a port of
+the qvac-fabric cache), multi-GPU on 2026-10-08 with [#30112](https://github.com/ggml-org/llama.cpp/pull/30112).
+`--moe-cache-mib N` keeps recently used experts of the CPU-resident layers on the GPU (LRU); a miss is copied over PCIe
+and computed on the GPU; only batches of up to 32 tokens use it. The PR reports 1.6-2.2x decode on an RTX 4090/5090
+with PCIe 4.0. On PCIe 3.0 (2080 Ti, below) it does not beat the static placement, and a cache smaller than one
+token's working set makes decode 4x slower.
+
+The earlier work, for context:
 
 | Work | Status (2026-10-02) | Reported result |
 |---|---|---|
@@ -60,6 +67,18 @@ Qwen3.6-35B-A3B Q6_K, a user reported +16% in [#27861](https://github.com/ggml-o
 | [FreeToken](https://github.com/FlashML-org/FreeToken) | GPU-offload, CPU and hybrid MoE modes, pick by benchmark | see its docs |
 
 ## Our measurements
+
+[RTX 2080 Ti 11 GB + Threadripper 3960X, 2026-10-11, llama.cpp b11516](bench/results/2026-10-11-rtx2080ti-tr3960x/)
+(also: the upstream expert cache on real text, cache policies on a routing trace, expert pruning KL, a 4-hour GLM soak):
+
+| Engine | Model | Decode tok/s | Prefill 32K tok/s |
+|---|---|---:|---:|
+| llama.cpp b11516 + MTP | Qwen3.6-35B-A3B UD-Q4_K_M | 83.8 | 1004 |
+| llama.cpp b11516 | Qwen3.6-35B-A3B UD-Q4_K_M | 57.7 | 1037 |
+| llama.cpp b11516, `--moe-cache-mib 6000` | Qwen3.6-35B-A3B UD-Q4_K_M | 56.9 | 1089 |
+| llama.cpp b11516 | Qwen3-Coder-Next Q4_K_M | 42.6 | 562 |
+| llama.cpp b11516 | GLM-5.3-Flash UD-IQ2_XXS | 12.0 | 165 |
+| llama.cpp b11516, `--moe-cache-mib 2048` | GLM-5.3-Flash UD-IQ2_XXS | 3.5 | - |
 
 [RTX 2080 Ti 11 GB + Threadripper 3960X, 128 GB DDR4-3200](bench/results/2026-10-02-rtx2080ti-tr3960x/):
 
